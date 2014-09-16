@@ -1,0 +1,100 @@
+/*=======================================
+reservation
+=======================================*/
+.reservation-list{
+    display: inline-block;
+    width:45%;
+    margin-bottom: 30px;
+}
+.reservation-list h3 {
+    height:100px;
+    line-height: 20px;
+}
+.reservation-list h3 span{font-size: 1.3rem;}
+.reservation-list img{width:100%;}
+.reservation-list-left{float:left;}
+.reservation-list-right{float:right;}
+
+.cancel-policy-table{margin-left:100px;}
+.cancel-policy-table th,
+.cancel-policy-table td{
+    width: 120px;
+    padding:10px;
+    text-align: center;
+    font-size: 1.6rem;
+    border-left: 1px dotted white;
+}
+.cancel-policy-table .no-left-border{
+    border-left: none;
+}
+/*=======================================
+contact
+=======================================*/
+#boxContact01 h2{
+    font-size:20px;
+    color:#FFF;
+    text-align:center;
+}
+#boxContact01 table{
+    width:700px;
+    margin:0 auto;
+    
+}
+#boxContact01 th{
+    color:#FFF;
+}
+#boxContact01 td{
+    color:#FFF;
+    padding:10px 0;
+}
+#btnContact01{
+    text-align:center;
+}
+#btnContact01 input{
+    padding:5px;
+}
+
+#boxContact01 p{
+    font-size:18px;
+    color:#FFF;
+    text-align:center;
+}
+/*=======================================
+faq
+=======================================*/
+.contents-box{
+    width:960px;
+    height: auto;
+    float: left;
+}
+
+.contents-box dl{
+    width:480px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.contents-box dl dt{
+    width: 460px;
+    line-height: 1.5em;
+    padding: 20px 0 0 0;
+}
+
+.contents-box dl dt dd{
+    width: 460px;
+    line-height: 1.5em;
+    padding: 10px 0 20px 0;
+}
+
+#contents-bottom{
+    width: 960px;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+}
+
+#contents-bottom a{
+    border-bottom   : solid 1px #b7dda3;
+    color: #b7dda3;
+    padding-bottom: 2px;
+}

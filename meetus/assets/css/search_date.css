@@ -1,0 +1,80 @@
+/*=======================================
+search_date
+=======================================*/
+
+/* content-header*/
+.content-header{
+    width: 960px;
+    margin-bottom: 30px;
+    border-bottom:#fff solid 1px;
+}
+.content-header .search-date{
+    float: left;
+    display: inline-block;
+}
+.content-header .search-box{
+    display:inline-block;
+    margin:0;
+}
+.content-header .search-box dl{ margin:0;}
+
+.content-header .empty-room-menu {
+    float: left;
+    display: inline-block;
+    margin:35px 0 0 50px;
+}
+.content-header .empty-room-menu li{
+    display: inline-block;
+}
+
+.content-header .price-menu{
+    float: right;
+    display: inline-block;
+    margin-top:35px;
+}
+.content-header .price-menu li{
+    display: inline-block;
+}
+
+
+/* form */
+input[type="date"] {
+    margin-top: 5px;
+    line-height: 2rem;
+    background-color: white;
+}
+
+/* house-list */
+#house-list{
+    width: 940px;
+    margin:0 10px 20px;
+}
+#house-list .house{
+    float:left;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+#house-list .house-last{margin-right:0;}
+#house-list .house:hover{opacity: .8;}
+#house-list .house a{color:white;}
+#house-list .house a:hover{
+    color:red;
+    text-decoration: none;
+}
+#house-list .house_img{
+    width: 220px;
+    height: 220px;
+    background-color: gray;
+}
+#house-list .house_detail{
+    text-align: center;
+}
+#house-list .house_detail .name {
+    font-size: 1.7rem;
+    margin:10px;
+    padding:0;
+}
+#house-list .house_detail p{
+    text-align: right;
+}

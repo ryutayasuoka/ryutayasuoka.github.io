@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>町屋「ほげほげ」</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/css/base.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/css/houses.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="clearfix">
+            <a href="../index.html" class="brand">
+                <img src="../../assets/img/common/logo_white.png" alt="MeetUs">
+            </a>
+            <ul class="nav-menu">
+                <li>町屋ステイとは</li>
+                <li>日付検索</li>
+                <li>エリア検索</li>
+                <li>町屋一覧</li>
+                <li>予約の流れ</li>
+                <li>ヘルプ</li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div id="container" class="clearfix">
+        <h1>町家「ほげほげ」</h1>
+        <nav class="houses-header-menu">
+            <ul>
+                <li><a href="about.html">町家について</a></li>
+                <li><a href="equipment.html">設備</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="info.html">周辺情報</a></li>
+                <li><a href="review.html">レビュー</a></li>
+                <li><span class="active">予約</span></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <section class="clearfix">
+            <h2 style="margin-top:0;">予約</h2>
+
+            <div class="confirm-list">
+                <h4>予約内容</h4>
+                <table>
+                    <tr>
+                        <th>町家名</th>
+                        <td>ほげほげ</td>
+                    </tr>
+                    <tr>
+                        <th>チェックイン</th>
+                        <td>2014年5月20日</td>
+                    </tr>
+                    <tr>
+                        <th>宿泊日数</th>
+                        <td>３泊</td>
+                    </tr>
+                    <tr>
+                        <th>チェックアウト</th>
+                        <td>2014年11月20日</td>
+                    </tr>
+                    <tr>
+                        <th>宿泊人数</th>
+                        <td>5人</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <p><span style="margin-right:50px;">合計金額</span>96000円</p>
+            </div>
+
+            <div class="user-form-box">
+                <p>
+                    ※左記の内容で宜しければ以下のお客様情報を記入後、<br>
+                    「予約確認」をクリックしてください
+                </p>
+
+                <form action="confirm.html" method="POST">
+                    <table>
+                        <tr>
+                            <th>お客様氏名</th>
+                            <td>
+                                姓: <input type="text" name="first-name" size="15"/>
+                                名: <input type="text" name="last-name" size="15"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>連絡先メールアドレス</th>
+                            <td>
+                                <input type="email" name="email" size="50" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>連絡先電話番号</th>
+                            <td>
+                                <input type="tel" name="telephone" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>チェックイン時間</th>
+                            <td>
+                                <select name="checkin">
+                                    <option value="16:00">16:00〜16:30</option>
+                                    <option value="16:30">16:30〜17:00</option>
+                                    <option value="17:00">17:00〜17:30</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>宿泊人数内訳</th>
+                            <td>
+                                大人：<select name="adult">
+                                    <option value="0">0人</option>
+                                    <option value="1">1人</option>
+                                    <option value="2">2人</option>
+                                    <option value="3">3人</option>
+                                    <option value="4">4人</option>
+                                    <option value="5">5人</option>
+                                    <option value="6">6人</option>
+                                    <option value="7">7人</option>
+                                    <option value="8">8人</option>
+                                    <option value="9">9人</option>
+                                    <option value="10">10人</option>
+                                </select>
+                                子供：<select name="child">
+                                    <option value="0">0人</option>
+                                    <option value="1">1人</option>
+                                    <option value="2">2人</option>
+                                    <option value="3">3人</option>
+                                    <option value="4">4人</option>
+                                    <option value="5">5人</option>
+                                    <option value="6">6人</option>
+                                    <option value="7">7人</option>
+                                    <option value="8">8人</option>
+                                    <option value="9">9人</option>
+                                    <option value="10">10人</option>
+                                </select>
+                                幼児：<select name="baby">
+                                    <option value="0">0人</option>
+                                    <option value="1">1人</option>
+                                    <option value="2">2人</option>
+                                    <option value="3">3人</option>
+                                    <option value="4">4人</option>
+                                    <option value="5">5人</option>
+                                    <option value="6">6人</option>
+                                    <option value="7">7人</option>
+                                    <option value="8">8人</option>
+                                    <option value="9">9人</option>
+                                    <option value="10">10人</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+                    <h5>お支払い方法</h5>
+                    <dl>
+                        <input type="radio" name="pay-rule" value="cash">
+                        現金でお支払い
+                        <dd id="cash">宿泊分×1万円(¥30000)を前金としてお支払い頂き、残金をチェックイン当日に現地にてお支払い頂きます</dd>
+                        <input type="radio" name="pay-rule" value="paypal">
+                        paypal(クレジットカード)で支払い
+                        <dd id="paypal">予約確定後、お支払い手続きを記載したメールが届きます</dd>
+                    </dl>
+                    <div class="text-center">
+                        <input type="submit" name="submie" value="予約確認" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footerWrap clearfix">
+            <ul class="footerNavi01">
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+            <ul class="footerNavi02">
+                <li><a href="index.html">町家ステイとは</a></li>
+                <li><a href="../abouts/company.html">会社概要</a></li>
+                <li><a href="../help/contact.html">コンタクト</a></li>
+                <li><a href="#">プライベートガイド</a></li>
+                <li>FB</li>
+                <li>TW</li>
+                <li>©MeetUsKyoto2014</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
+

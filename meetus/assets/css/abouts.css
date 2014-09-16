@@ -1,0 +1,76 @@
+/*=======================================
+index
+=======================================*/
+
+#boxMatiya01{
+    width:556px;
+    float:left;
+    padding-left:50px;
+    
+}
+#boxMatiya01 p{
+    width:536px;
+    line-height:140%;
+    font-size:20px;
+}
+#boxMatiya02{
+    width:345px;
+    float:right;
+}
+.search-menu{
+    clear:both;
+    float:right;
+    width:420px;
+    border:#fff 2px solid;
+    padding:15px 10px;
+    margin:50px 20px 0 0;
+}
+.search-menu h3{
+    text-align:center;
+    padding-bottom:15px;
+    color:#fff;
+    font-size:2rem;
+}
+.search-menu ul{
+    width:400px;
+}
+.search-menu li{
+    display: inline-block;
+    width:120px;
+    line-height:200%;
+    text-align:center;
+    font-size:1.6rem;
+    color:#b7dea3;
+}
+.search-menu .nav01{
+    border-left: #fff 2px solid; 
+}
+.search-menu .nav02{
+    border-left: #fff 2px solid; 
+    border-right: #fff 2px solid; 
+}
+.search-menu .nav03{ 
+    border-right: #fff 2px solid; 
+}
+
+/*=======================================
+company
+=======================================*/
+.company-table{
+    margin-left: 100px;
+}
+.company-table th,
+.company-table td{
+    padding:15px;
+}
+.company-table tr{
+    border-bottom:1px dotted white;
+}
+.company-table th{
+    width:200px;
+    text-align: center;
+    border-right: 1px solid white;
+}
+.company-table td{
+    padding-left: 30px;
+}

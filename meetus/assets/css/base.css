@@ -1,0 +1,136 @@
+
+/*Webフォント*/
+@font-face {
+  font-family: 'hannari';
+  src: url(../font/hannari.eot);
+  src: url(../font/hannari.otf) format('opentype');
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	margin:0 auto;
+	width:100%;
+	height:100%;
+	font-family:"hannari","ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	background-color: black;
+	color:white;
+}
+
+/*=======================================
+tips
+=======================================*/
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix { overflow:hidden; }/* for IE5.5 - IE7*/  
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%; overflow:visible;}
+/* End hide from IE-mac */
+.clear { clear: both; } /* ←floatを解除するためのCSS */
+
+.inline-block { display: inline-block; }
+
+.font-gothic{font-family: "ＭＳ ゴシック";}
+
+#container{
+	box-sizing: content-box;
+	width:960px;
+	margin:0 auto;
+	padding:0 20px 100px;
+}
+#wrap02{
+	margin:0 auto;
+	color:#fff;
+}
+/*=======================================
+header
+=======================================*/
+header{
+	min-width: 960px;
+	height:80px;
+	margin:0 auto;
+	background-color: #333;
+}
+header .brand{
+	display:inline-block;
+	float:left;
+	line-height: 80px;
+}
+header .brand img{
+	width:auto;
+	height:80px;
+	margin:auto 20px;
+}
+.nav-menu{
+	display: inline-block;
+	float:right;
+	margin-right: 20px;
+}
+.nav-menu li{
+	display: inline-block;
+	padding:0 10px;
+	line-height: 80px;
+	color:#fff;
+}
+.nav-menu li a{ color: white; }
+.nav-menu li a:hover{
+	color: red;
+	text-decoration: none;
+}
+
+
+/*=======================================
+footer
+=======================================*/
+footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:60px;
+	line-height: 60px;
+	background-color:#111;
+
+}
+footer .footerWrap{
+	min-width:1100px;
+	margin:0 auto;
+}
+footer ul,
+footer li{
+	display: inline-block;
+}
+footer li a{ color: white;}
+footer li a:hover{
+	color: red;
+	text-decoration: none;
+}
+.footerNavi01{
+	float:left;
+	width:200px;
+	margin:0 30px;
+}
+.footerNavi01 li{
+	padding-right:10px;
+}
+.footerNavi02{
+	float:right;
+	width: 740px;
+}
+.footerNavi02 li{
+	padding-left:5px;
+}
+
+/*=======================================
+breadcrumb
+=======================================*/
+.topicpath ol li {
+	/* liを横並び＆ブレットを消す */
+	display: inline;
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.topicpath ol li a{
+	text-decoration: none;
+	color: white;
+} 

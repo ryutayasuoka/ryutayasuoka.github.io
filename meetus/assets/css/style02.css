@@ -1,0 +1,82 @@
+
+/*shousai
+-----------------------------------------*/
+#main{
+	width:849px;
+	float:left;
+	
+}
+
+#thum{
+	width:81px;
+	float:right;
+	padding-top:20px;
+}
+#boxShosai01{
+	border-bottom:#fff solid 1px;
+}
+#boxShosai01 h2{
+	color:#fff;
+	float:left;
+	padding:10px 20px 7px 0;
+	font-size:21px;
+}
+#boxShosai01 li{
+	float:left;
+	
+}
+#boxShosai01 .hover{
+	font-size:18px;
+	border-top:#fff 1px solid;
+	color:#fff;
+	margin-top:13px;
+}
+#boxShosai01 li a{
+	color:#fff;
+	text-decoration:none;
+}
+#boxShosai01 .nav01{
+	padding:0 15px 0 15px;
+	margin-top:15px;
+}
+#boxShosai01 .nav02{
+	padding:0 0 0 15px;
+	margin-top:15px;
+}
+#boxShosai01 .nav03{
+	padding:0 0 0 15px;
+	margin-top:15px;
+}
+#boxShosai01 .nav04{
+	padding:0 0 0 15px;
+	margin-top:15px;
+}
+#boxShosai01 .nav05{
+	padding:0 0 0 15px;
+	margin-top:15px;
+}
+#boxShosai01 .nav06{
+	padding:0 0 0 15px;
+	margin-top:15px;
+}
+#boxShosai01 .nav07{
+	padding:0 0 0 15px;
+	margin-top:15px;
+}
+#boxShosai02{
+	padding:15px;
+}
+#boxShosai02 h3{
+	color:#fff;
+	font-size:21px;
+	line-height:180%;
+	
+}
+#boxShosai02 p{
+	color:#fff;
+	width:250px;
+	line-height:200%;
+	padding-top:30px;
+	font-size:16px;
+	float:left;
+}
