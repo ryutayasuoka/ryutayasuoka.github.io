@@ -383,6 +383,112 @@ form-finished
 .form-finished h3{
     margin: 80px auto 40px;
 }
+
+
+
+/*=======================================
+review
+=======================================*/
+
+#review_left{
+    width:  460px;
+    height: 480px;
+    float: left;
+    position: relative;
+    line-height: 1em;
+}
+
+#review_left p{
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    margin-left: 20px;
+}
+
+.review_right{
+    width: 460px;
+    float: left;
+}
+.showmore01{ 
+    width: 460px;
+    line-height:24px;
+    font-size:16px;
+
+}
+.showmore01 p{
+    width: 460px;
+    margin-bottom: 10px;
+}
+
+.showmore_content{ 
+    position:relative; 
+    overflow:hidden;
+}
+
+.showmore_trigger span{
+    display:block;
+}
+
+.showmore{ 
+    width: 460px;
+    line-height:24px;
+    font-size:16px;
+}
+
+.showmore_none{
+    width: 460px;
+    line-height:24px;
+    font-size:16px;
+}
+.showmore p{
+    width: 460px;
+    padding-bottom:20px;
+}
+
+.showmore_content{ 
+    position:relative; 
+    overflow:hidden;
+}
+
+.showmore_trigger{
+    width:420px; 
+    cursor:pointer;
+    padding-bottom:10px;
+}
+.showmore_trigger span{
+    display:block;
+}
+
+
+.review_right hr{
+    width: 420px;
+    border: none;
+    border-bottom: 1px #fff dashed;
+    margin: 0 auto;
+    margin-bottom:20px;
+    padding-bottom:10px;
+
+}
+
+/*=======================================
+mail
+=======================================*/
+#mail{
+    width: 960px;
+    float: left;
+}
+
+#mail h2{
+    text-align: center;
+    margin: 65px;
+    font-size: 26px;
+}
+
+#mail p{
+    text-align: center;
+    font-size: 18px;
+}
 /* not need?? */
 /*
 #thum li a{

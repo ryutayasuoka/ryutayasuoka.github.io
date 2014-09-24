@@ -13,32 +13,44 @@
 
     <div class="top-container">
         <div class="box-top">
-            <h1><img src="../assets/img/common/Meetuslogo.png" width="234" height="71" alt="MeetUs"></h1>
+            <div id="logo">
+                <p id="logo_left">奥深き京都を楽しむ</p>
+                <h1><img src="../assets/img/common/Meetuslogo.png" width="234" height="71" alt="MeetUs"></h1>
+                <p id="logo_right">昔ながらの町家から</p>
+            </div>
+
+            <p id="top01">ホテル</p>
+            <p id="top02">代わりに</p>
+            <p id="top03">京町屋</p>
+            <p id="top04">レンタル</p>
         </div>
+
         <div class="box-middle">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="search_date/index.html">
                         <span class="glyphicon glyphicon-search"></span>町屋一覧
                     </a>
                 </li>
                 <li class="nav02">
-                    <a href="#">
+                    <a href="search_area/index.html">
                         <span class="glyphicon glyphicon-search"></span>エリアで検索
                     </a>
                 </li>
             </ul>
         </div>
         <div class="box-bottom">
-            <table>
-                <tr>
-                    <td class="font-gothic">IN&nbsp;</td>
-                    <td><input type="date" name="in_date" /></td>
-                    <td class="font-gothic">&nbsp;～&nbsp;OUT&nbsp;</td>
-                    <td><input type="date" name="out_date" /></td>
-                    <td><input type="button" value="日付で検索" id="btnTop01"></td>
-                </tr>
-            </table>
+            <form action="search_area/index.html" method="get">
+                <table>
+                    <tr>
+                        <td class="font-gothic">IN&nbsp;</td>
+                        <td><input type="date" name="in_date" /></td>
+                        <td class="font-gothic">&nbsp;～&nbsp;OUT&nbsp;</td>
+                        <td><input type="date" name="out_date" /></td>
+                        <td><input type="submit" name="submit" value="日付で検索" id="btnTop01"></td>
+                    </tr>
+                </table>
+            </form>
         </div>
     </div>
 
