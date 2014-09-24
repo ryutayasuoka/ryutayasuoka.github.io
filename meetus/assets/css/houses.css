@@ -489,20 +489,24 @@ mail
     text-align: center;
     font-size: 18px;
 }
-/* not need?? */
-/*
-#thum li a{
-    display:block;
+
+/*=======================================
+thumbnail
+=======================================*/
+
+.thumbnails{
+    position:absolute;
+    right:0;
+    top:80px;
     background:url(../img/lightbox/thumb01.jpg) no-repeat;
-    width:81px;
-    height:68px;
+    width:120px;
+    height:500px;
+    overflow-y:scroll;
 }
-#thum li a:hover{
-    background-position:0 -68px;
+.thumbnails a img{
+    width:100%;
+    opacity: .7;
 }
-#main{
-    width:849px;
-    float:left;
-    
+.thumbnails a img:hover{
+    opacity: 1;
 }
-*/
