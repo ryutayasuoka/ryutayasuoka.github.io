@@ -6,20 +6,24 @@ $(document).ready(function(){
     $(window).scroll(function(){
 
         var scroll_val = $(document).scrollTop();
-        //console.log(scroll_val);
         moveTitle(scroll_val);
         showLogo(scroll_val);
+        showVideo(scroll_val);
         showHeader(scroll_val);
         headerAction(scroll_val);
         slideImage(scroll_val);
     });
 });
-
 function moveTitle(scroll_val){
-    if(scroll_val > -100 && scroll_val < 1000){
-        $('.logo li').each(function(){
-            var delta = -scroll_val*parseInt($(this).data('y'));
-            $(this).css('top',delta*0.3);
+    $('.logo li').each(function(){
+        var delta = -scroll_val*parseInt($(this).data('y'));
+        $(this).css('top',delta*0.3);
+    });
+}
+function showVideo(scroll_val){
+    if(scroll_val > 27500 && scroll_val < 33000){
+        $('video').css({
+            top : scroll_val-26940
         });
     }
 }
@@ -62,7 +66,6 @@ function slideImage(scroll_val){
 
     $.each(slide_image_value,function(m){
         var rel_scroll_val = scroll_val - this['start']; //relative scroll_val
-        console.log(rel_scroll_val);
         if(this["position"] == "left"){
             if(rel_scroll_val >= 0 && rel_scroll_val <= 1000){
                 $(m).css({
@@ -116,10 +119,13 @@ function slideImage(scroll_val){
 }
 
 function showHeader(scroll_val){
-    if(scroll_val >= 1000 && $('header').data('isshow') == false){
+    if(scroll_val >= 1000 && scroll_val < 26000 && $('header').data('isshow') == false){
         $('header').fadeIn(500);
         $('header').data('isshow',true);
     }else if(scroll_val < 1000 && $('header').data('isshow') == true){
+        $('header').fadeOut(500);
+        $('header').data('isshow',false);
+    }else if(scroll_val > 26000 && $('header').data('isshow') == true){
         $('header').fadeOut(500);
         $('header').data('isshow',false);
     }
@@ -156,17 +162,12 @@ function headerAction(scroll_val){
         if( (scroll_val > this['start'] && scroll_val < this['last'] ) &&
             $(member).attr('class')=="up" ){
 
-            console.log("down!!");
-        console.log(scroll_val);
-        $(member).attr('class','down');
+            $(member).attr('class','down');
         $(member).animate({top : '52px'},300);
     }else if( (scroll_val < this['start'] && $(member).attr('class')=="down") ||
       (scroll_val > this['last'] && $(member).attr('class')=="down")  ){
-
         $(member).attr('class','up');
         $(member).animate({top : '0px'},300);
-        console.log("up!!");
-        console.log(scroll_val);
     }
 });
 }
