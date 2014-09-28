@@ -90,15 +90,58 @@ header li{
 /*===============================
 member
 ===============================*/
-#member1{
+.member{
     z-index: -2;
     position:absolute;
-    top:1900px;
-    left:0%;
     width:100%;
-    height:800px;
-    margin-bottom:300px;
-    background-image:url("../img/naoki.jpg");
-    background-size: 100%;
+    height:4000px;
+}
+.member_img{
+    z-index: 5;
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:auto;
+    background-size: 100% 100%;
     opacity: .3;
+}
+#member_img1,
+#member_img3,
+#member_img5{
+    left:-100%;
+}
+#member_img2,
+#member_img4,
+#member_img6{
+    right:-100%;
+}
+#member1{
+    top:2000px;
+}
+#member2{
+    top:6000px;
+}
+#member3{
+    top:10000px;
+}
+#member4{
+    top:14000px;
+}
+#member5{
+    top:18000px;
+}
+#member6{
+    top:22000px;
+}
+/*===============================
+video
+===============================*/
+#video{
+    z-index: -2;
+    position:absolute;
+    width:100%;
+    height:4000px;
+    top:26000px;
+    margin-bottom: 500px;
+    background-color: orange;
 }
