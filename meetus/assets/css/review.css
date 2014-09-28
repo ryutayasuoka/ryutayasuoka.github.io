@@ -1,0 +1,32 @@
+h2{
+    margin: 30px auto;
+}
+textarea{
+    color:black;
+}
+form input[type="submit"]{
+    display: block;
+    margin:30px auto;
+    padding:8px 12px;
+    color:#fff;
+    font-size: 2rem;
+    background-color: black;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+.back-btn{
+    display: block;
+    width:100px;
+    margin:30px auto;
+    padding:8px 12px;
+    color:#fff;
+    font-size: 2rem;
+    text-align: center;
+    background-color: black;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+.back-btn:hover{
+    color:white;
+    text-decoration: none;
+}

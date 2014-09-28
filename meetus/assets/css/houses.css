@@ -384,8 +384,39 @@ form-finished
     margin: 80px auto 40px;
 }
 
-
-
+/*=======================================
+pay-info
+=======================================*/
+.pay-info{
+    text-align: center;
+}
+.pay-info .user-info{
+    width:700px;
+    margin:0 auto;
+}
+.pay-info .user-info tr{
+    line-height: 35px;
+}
+.pay-info .user-info td{
+    text-align: left;
+}
+.pay-info-detail {
+    width:700px;
+    margin:25px auto 0;
+    text-align: left;
+}
+.pay-info-detail .account{
+    margin:20px 0 0;
+}
+.pay-info-detail .account th{
+    width: 150px;
+}
+.pay-info-detail .account td{
+    text-align: left;
+}
+.pay-info-detail input[type="submit"]{
+    color:#000;
+}
 /*=======================================
 review
 =======================================*/
