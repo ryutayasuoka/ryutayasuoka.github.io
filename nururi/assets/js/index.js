@@ -6,6 +6,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
 
         var scroll_val = $(document).scrollTop();
+        console.log(scroll_val);
         moveTitle(scroll_val);
         showLogo(scroll_val);
         showVideo(scroll_val);
@@ -16,50 +17,53 @@ $(document).ready(function(){
 });
 function moveTitle(scroll_val){
     $('.logo li').each(function(){
-        var delta = -scroll_val*parseInt($(this).data('y'));
-        $(this).css('top',delta*0.3);
+        var delta = -4000-((scroll_val-1000)*1.5*parseInt($(this).data('y')));
+        if(scroll_val>=0 && scroll_val <= 1000){
+            delta = -scroll_val*4;
+        }
+        $(this).css('top',delta*0.1);
     });
 }
 function showVideo(scroll_val){
-    if(scroll_val > 27500 && scroll_val < 33000){
+    if(scroll_val > 28300 && scroll_val < 31000){
         $('video').css({
-            top : scroll_val-26940
+            top : scroll_val-27900
         });
     }
 }
 function showLogo(scroll_val){
     if(scroll_val >= 500 && $('#top_logo').data('isshow') == true){
-        $('#top_logo').fadeOut(300);
         $('#top_logo').data('isshow',false);
+        $('#top_logo').fadeOut(300);
     }else if(scroll_val < 10 && $('#top_logo').data('isshow') == false){
-        $('#top_logo').fadeIn(300);
         $('#top_logo').data('isshow',true);
+        $('#top_logo').fadeIn(300);
     }
 }
 function slideImage(scroll_val){
     var slide_image_value = {
         '#member_img1' : {
-            "start" : 1000,
+            "start" : 5500,
             "position" : "left"
         },
         '#member_img2' : {
-            "start" : 5000,
+            "start" : 9000,
             "position" : "right"
         },
         '#member_img3' : {
-            "start" : 9000,
+            "start" : 12500,
             "position" : "left"
         },
         '#member_img4' : {
-            "start" : 13000,
+            "start" : 16000,
             "position" : "right"
         },
         '#member_img5' : {
-            "start" : 17000,
+            "start" : 19500,
             "position" : "left"
         },
         '#member_img6' : {
-            "start" : 21000,
+            "start" : 23000,
             "position" : "right"
         },
     };
@@ -67,23 +71,23 @@ function slideImage(scroll_val){
     $.each(slide_image_value,function(m){
         var rel_scroll_val = scroll_val - this['start']; //relative scroll_val
         if(this["position"] == "left"){
-            if(rel_scroll_val >= 0 && rel_scroll_val <= 1000){
+            if(rel_scroll_val >= 0 && rel_scroll_val <= 500){
                 $(m).css({
-                    left: '-'+ ( (1000-rel_scroll_val)*0.1 )+'%',
+                    left: '-'+ ( (500-rel_scroll_val)*0.2 )+'%',
                 });
-            }else if(rel_scroll_val >= 1000 && rel_scroll_val <= 3000){
+            }else if(rel_scroll_val >= 500 && rel_scroll_val <= 2500){
                 $(m).css({
                     left: '0%',
-                    opacity : ((rel_scroll_val-1000)*0.001)+0.3
+                    opacity : ((rel_scroll_val-500)*0.001)+0.3
                 });
-            }else if(rel_scroll_val >= 3000 && rel_scroll_val <= 4000){
+            }else if(rel_scroll_val >= 2500 && rel_scroll_val <= 3500){
                 $(m).css({
                     left: '0%',
-                    opacity : ((4000-rel_scroll_val)*0.001)+0.3
+                    opacity : ((3500-rel_scroll_val)*0.001)+0.3
                 });
-            }else if(rel_scroll_val >= 4000 && rel_scroll_val <= 5000){
+            }else if(rel_scroll_val >= 3500 && rel_scroll_val <= 4000){
                 $(m).css({
-                    left: '-'+ ( (rel_scroll_val-4000)*0.1 )+'%',
+                    left: '-'+ ( (rel_scroll_val-3500)*0.2 )+'%',
                 });
             }else{
                 $(m).css({
@@ -91,23 +95,23 @@ function slideImage(scroll_val){
                 });
             }
         }else{
-            if(rel_scroll_val >= 0 && rel_scroll_val <= 1000){
+            if(rel_scroll_val >= 0 && rel_scroll_val <= 500){
                 $(m).css({
-                    right: '-'+ ( (1000-rel_scroll_val)*0.1 )+'%',
+                    right: '-'+ ( (500-rel_scroll_val)*0.2 )+'%',
                 });
-            }else if(rel_scroll_val >= 1000 && rel_scroll_val <= 3000){
+            }else if(rel_scroll_val >= 500 && rel_scroll_val <= 2500){
                 $(m).css({
                     right: '0%',
-                    opacity : ((rel_scroll_val-1000)*0.001)+0.3
+                    opacity : ((rel_scroll_val-500)*0.001)+0.3
                 });
-            }else if(rel_scroll_val >= 3000 && rel_scroll_val <= 4000){
+            }else if(rel_scroll_val >= 2500 && rel_scroll_val <= 3500){
                 $(m).css({
                     right: '0%',
-                    opacity : ((4000-rel_scroll_val)*0.001)+0.3
+                    opacity : ((3500-rel_scroll_val)*0.001)+0.3
                 });
-            }else if(rel_scroll_val >= 4000 && rel_scroll_val <= 5000){
+            }else if(rel_scroll_val >= 3500 && rel_scroll_val <= 4000){
                 $(m).css({
-                    right: '-'+ ( (rel_scroll_val-4000)*0.1 )+'%',
+                    right: '-'+ ( (rel_scroll_val-3500)*0.2 )+'%',
                 });
             }else{
                 $(m).css({
@@ -119,13 +123,13 @@ function slideImage(scroll_val){
 }
 
 function showHeader(scroll_val){
-    if(scroll_val >= 1000 && scroll_val < 26000 && $('header').data('isshow') == false){
+    if(scroll_val >= 3000 && scroll_val < 27000 && $('header').data('isshow') == false){
         $('header').fadeIn(500);
         $('header').data('isshow',true);
     }else if(scroll_val < 1000 && $('header').data('isshow') == true){
         $('header').fadeOut(500);
         $('header').data('isshow',false);
-    }else if(scroll_val > 26000 && $('header').data('isshow') == true){
+    }else if(scroll_val > 27000 && $('header').data('isshow') == true){
         $('header').fadeOut(500);
         $('header').data('isshow',false);
     }
@@ -133,28 +137,28 @@ function showHeader(scroll_val){
 function headerAction(scroll_val){
     var header_down_value = {
         '#m1' : {
-            "start" : 1200,
-            "last" : 5200,
+            "start" : 6000,
+            "last" : 9100,
         },
         '#m2' : {
-            "start" : 5200,
-            "last" : 9200,
+            "start" : 9100,
+            "last" : 12600,
         },
         '#m3' : {
-            "start" : 9200,
-            "last" : 13200,
+            "start" : 12600,
+            "last" : 16100,
         },
         '#m4' : {
-            "start" : 13200,
-            "last" : 17200,
+            "start" : 16100,
+            "last" : 19600,
         },
         '#m5' : {
-            "start" : 17200,
-            "last" : 21200,
+            "start" : 19600,
+            "last" : 23100,
         },
         '#m6' : {
-            "start" : 21200,
-            "last" : 25200,
+            "start" : 23100,
+            "last" : 26700,
         },
     };
 

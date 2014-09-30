@@ -25,18 +25,18 @@ common
 top
 ===============================*/
 #top {
-    height:2000px;
+    height:6000px;
 }
 #top img{
     position:fixed;
-    top:20%;
-    left: 20%;
-    width:60%;
-    height:140px;
+    top:30%;
+    left: 5%;
+    width:90%;
+    height:auto;
 }
 #top .logo{
     position:fixed;
-    top:50%;
+    top:1000px;
     left:32%;
 }
 #top .logo li{
@@ -94,7 +94,7 @@ member
     z-index: -2;
     position:absolute;
     width:100%;
-    height:4000px;
+    height:3000px;
 }
 .member_img{
     z-index: 5;
@@ -116,22 +116,22 @@ member
     right:-100%;
 }
 #member1{
-    top:2000px;
-}
-#member2{
     top:6000px;
 }
+#member2{
+    top:9000px;
+}
 #member3{
-    top:10000px;
+    top:12000px;
 }
 #member4{
-    top:14000px;
+    top:15000px;
 }
 #member5{
     top:18000px;
 }
 #member6{
-    top:22000px;
+    top:21000px;
 }
 /*===============================
 video
@@ -141,15 +141,17 @@ video
     position:absolute;
     width:100%;
     height:4000px;
-    top:26000px;
-    margin:1000px 0 0;
+    top:28000px;
+    margin:0px 0 0;
     background-color: black;
     text-align: center;
 }
 #video video{
     position: relative;
-    top:1500px;
+    top:400px;
     z-index: 1000;
     width:80%;
     margin: 0 auto;
+    background-image:url("../img/thumbnail.png");
+    background-size: 100% 100%;
 }
