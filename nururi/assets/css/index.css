@@ -44,10 +44,14 @@ top
     position:relative;
     top: 0px;
     list-style: none;
-    font-family: "yojo";
-    font-size: 15rem;
-    font-weight: bold;
+    width:180px;
+    height:230px;
+    background-size: 100% 100%;
 }
+#top .logo #nu{ background-image:url("../img/nu.png");}
+#top .logo #ru{ background-image:url("../img/ru.png");}
+#top .logo #ri{ background-image:url("../img/ri.png");}
+
 /*===============================
 header
 ===============================*/
@@ -81,11 +85,19 @@ header .header_menu_red{
 header li{
     display: inline-block;
     position: relative;
-    width:16%;
+    top:-35px;
+    width:13%;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
     color:white;
+}
+header #header-logo{
+    text-align: left;
+    top:0;
+}
+header #header-logo img{
+    width:80%;
 }
 /*===============================
 member

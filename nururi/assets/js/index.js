@@ -123,10 +123,10 @@ function slideImage(scroll_val){
 }
 
 function showHeader(scroll_val){
-    if(scroll_val >= 3000 && scroll_val < 27000 && $('header').data('isshow') == false){
+    if(scroll_val >= 3700 && scroll_val < 27000 && $('header').data('isshow') == false){
         $('header').fadeIn(500);
         $('header').data('isshow',true);
-    }else if(scroll_val < 1000 && $('header').data('isshow') == true){
+    }else if(scroll_val < 3500 && $('header').data('isshow') == true){
         $('header').fadeOut(500);
         $('header').data('isshow',false);
     }else if(scroll_val > 27000 && $('header').data('isshow') == true){
@@ -163,15 +163,17 @@ function headerAction(scroll_val){
     };
 
     $.each(header_down_value,function(member){
-        if( (scroll_val > this['start'] && scroll_val < this['last'] ) &&
-            $(member).attr('class')=="up" ){
+        if(member != "header-logo"){
+            if( (scroll_val > this['start'] && scroll_val < this['last'] ) &&
+                $(member).attr('class')=="up" ){
 
-            $(member).attr('class','down');
-        $(member).animate({top : '52px'},300);
-    }else if( (scroll_val < this['start'] && $(member).attr('class')=="down") ||
-      (scroll_val > this['last'] && $(member).attr('class')=="down")  ){
-        $(member).attr('class','up');
-        $(member).animate({top : '0px'},300);
-    }
-});
+                $(member).attr('class','down');
+                $(member).animate({top : '17px'},300);
+            }else if( (scroll_val < this['start'] && $(member).attr('class')=="down") ||
+                      (scroll_val > this['last'] && $(member).attr('class')=="down")  ){
+                $(member).attr('class','up');
+                $(member).animate({top : '-35px'},300);
+            }
+        }
+    });
 }
